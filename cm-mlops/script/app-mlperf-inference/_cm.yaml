@@ -579,6 +579,15 @@ variations:
       mlperf-inference-implementation:
         tags: _pytorch
 
+  ray:
+    group: backend
+    env:
+      CM_MLPERF_BACKEND:
+        ray
+    add_deps_recursive:
+      mlperf-inference-implementation:
+        tags: _ray
+
   ncnn:
     group: backend
     env:

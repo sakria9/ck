@@ -200,6 +200,17 @@ deps:
       CM_MLPERF_DEVICE:
       - gpu
 
+  ## Ray (CUDA)
+  - tags: get,generic-python-lib,_torch_cuda
+    names:
+    - ml-engine-pytorch
+    - pytorch
+    enable_if_env:
+      CM_MLPERF_BACKEND:
+      - ray
+      CM_MLPERF_DEVICE:
+      - gpu
+
   ## Torchvision (CPU)
   - tags: get,generic-python-lib,_torchvision
     names:
